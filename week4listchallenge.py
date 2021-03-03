@@ -29,8 +29,7 @@ for x in bor:
     print(str(counter) + ". " + x)
     counter += 1
 
-for i in range(len(bor)):
-    print(str(i+1) + ". " + bor[i])
+
 ####################################################################################################
 # Take your list of restaurants from the previous challenge and print them out in a numbered list.
 # Example:
@@ -48,3 +47,7 @@ for i in range(len(bor)):
 # 3. <RESTAURANT 3> is 10.2 miles away
 
 # YOUR CODE HERE
+distances = [2.4, 6.8, 10.2]
+for i in range(len(bor)):
+    #print(str(i+1) + ". " + bor[i] + " is " + str(distances[i]) + " miles away.")
+    print(f"{str(i+1)}. {bor[i]} is {str(distances[i])} miles away.")
