@@ -7,6 +7,14 @@
 # cuisines: [LIST OF CUISINES HERE]".
 
 # YOUR CODE HERE
+cuisines = ['Chinese', 'American', 'Japanese', 'Vietnamese', 'Korean', 'Filipino', 'Italian', 'Mexican', 'Thai']
+cuisine_choice = input("What kind of cuisine are you interested in? ")
+if cuisine_choice not in cuisines:
+    print("Please choose one of these cuisines:", cuisines)
+    cuisine_choice = input("What kind of cuisine are you interested in? ")
+else:
+    print("You selected", cuisine_choice, "food.")
+
 
 ####################################################################################################
 # Find the name of at least three black-owned restaurants nearby and store their names in a list.
@@ -14,8 +22,15 @@
 
 # TIP: Use Google Maps to find nearby black-owned restaurants
 # https://www.google.com/maps/search/black+owned+restaurants
-# YOUR CODE HERE
+# -YOUR CODE HERE
+bor = ["Brown Sugar Kitchen", 'Little Skillet', "Tastebuds"]
+counter = 1
+for x in bor:
+    print(str(counter) + ". " + x)
+    counter += 1
 
+for i in range(len(bor)):
+    print(str(i+1) + ". " + bor[i])
 ####################################################################################################
 # Take your list of restaurants from the previous challenge and print them out in a numbered list.
 # Example:
